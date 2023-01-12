@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body{
+			background-color:lightblue;
+		}
+		input[type=text],input[type=password]{
+			width:50%;
+			height:50%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+		button{
+			background-color: #aa5704;
+			color:white;
+			padding:14px 30px;
+			margin:8px 0;
+			border:none;
+			cursor:pointer;
+			width:50%;
+		}
+		button:hover{
+			opacity:0.8;
+		}
+		.container{
+			padding:25px;
+			background-color: rgb(194,173,230);
+		}
+		span.psw{
+			float:right;
+			padding-top:30px;
+
+		}
+		h2{
+			color:black;
+		}
+	</style>
+	</head>
+	<body>
+		<p><center><h2>SIGNUP</h2></center></p>
+		<form action="/signup" method="post">
+		   <p><center><fieldset style="width:550px">
+			<div class="container">
+				<label for="uname"><b>Username</b></label><br>
+				<input type="text" placeholder="Enter Username" name="name" required ><br>
+
+				<label for="pwd"><b>password</b></label><br>
+				<input type="text" placeholder="Enter password" name="password" required ><br>
+
+				<button type="submit"><center>Signup</center></button>
+			</div>
+		   <a href="/login"><b>Login</b></a>
+		   </fieldset></center></p>
+		</form>
+	</body>
+</html>
